@@ -1,0 +1,14 @@
+C:\Users\51567025897\Desktop\BackEnd\ExerciciosVariaveis\bin\Debug\net10.0\ExerciciosVariaveis.exe
+C:\Users\51567025897\Desktop\BackEnd\ExerciciosVariaveis\bin\Debug\net10.0\ExerciciosVariaveis.deps.json
+C:\Users\51567025897\Desktop\BackEnd\ExerciciosVariaveis\bin\Debug\net10.0\ExerciciosVariaveis.runtimeconfig.json
+C:\Users\51567025897\Desktop\BackEnd\ExerciciosVariaveis\bin\Debug\net10.0\ExerciciosVariaveis.dll
+C:\Users\51567025897\Desktop\BackEnd\ExerciciosVariaveis\bin\Debug\net10.0\ExerciciosVariaveis.pdb
+C:\Users\51567025897\Desktop\BackEnd\ExerciciosVariaveis\obj\Debug\net10.0\ExerciciosVariaveis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\51567025897\Desktop\BackEnd\ExerciciosVariaveis\obj\Debug\net10.0\ExerciciosVariaveis.AssemblyInfoInputs.cache
+C:\Users\51567025897\Desktop\BackEnd\ExerciciosVariaveis\obj\Debug\net10.0\ExerciciosVariaveis.AssemblyInfo.cs
+C:\Users\51567025897\Desktop\BackEnd\ExerciciosVariaveis\obj\Debug\net10.0\ExerciciosVariaveis.csproj.CoreCompileInputs.cache
+C:\Users\51567025897\Desktop\BackEnd\ExerciciosVariaveis\obj\Debug\net10.0\ExerciciosVariaveis.dll
+C:\Users\51567025897\Desktop\BackEnd\ExerciciosVariaveis\obj\Debug\net10.0\refint\ExerciciosVariaveis.dll
+C:\Users\51567025897\Desktop\BackEnd\ExerciciosVariaveis\obj\Debug\net10.0\ExerciciosVariaveis.pdb
+C:\Users\51567025897\Desktop\BackEnd\ExerciciosVariaveis\obj\Debug\net10.0\ExerciciosVariaveis.genruntimeconfig.cache
+C:\Users\51567025897\Desktop\BackEnd\ExerciciosVariaveis\obj\Debug\net10.0\ref\ExerciciosVariaveis.dll
