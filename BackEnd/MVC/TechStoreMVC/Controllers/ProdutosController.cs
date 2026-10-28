@@ -5,10 +5,10 @@ namespace TechStoreMVC.Controllers
 {
     public class ProdutosController : Controller
     {
-        private readonly ProdutosDB _produtosDB;
+        private readonly ProdutoDB _produtosDB;
         public ProdutosController()
         {
-            _produtosDB = new ProdutosDB();
+            _produtosDB = new ProdutoDB();
         }
         [HttpGet]
         public ActionResult Index()
@@ -37,7 +37,7 @@ namespace TechStoreMVC.Controllers
 
         public IActionResult Create(Produto produto)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
                 return View(produto);
             _produtosDB.Adicionar(produto);
             TempData["Sucesso"] =
@@ -53,53 +53,51 @@ namespace TechStoreMVC.Controllers
 
             return View(produto);
 
-            _produtosDB.Adicionar(produto);
-            TempData["Sucesso"] =
-            "Produto cadastrado com sucesso";
+        }
 
-            return RedirectToAction(nameof(Index));
-            [HttpPost]
+        [HttpPost]
         [ValidateAntiForgeryToken]
+
         public IActionResult Edit(Produto produto, int id)
         {
             if (id != produto.Id)
             return BadRequest();
-
-            if(ModelState.IsValid)
-            return View(produto);
-
+            
+            if (!ModelState.IsValid)
+                return View(produto);
+            
             bool atualizou = _produtosDB.Atualizar(produto);
             if(!atualizou)
-             return NotFound();
+            return NotFound();
 
             TempData["Sucesso"] =
-            "Produto atualizado com sucesso!";
-            return RedirectToAction(nameof(Index));    
-            }
-
-            [HttpGet]
-        public IActionResult Exclusao(int id)
+            "Produto editado com sucesso!";
+            return RedirectToAction(nameof(Index));
+        }
+        [HttpGet]
+        public IActionResult Delete(int id)
         {
             Produto? produto = _produtosDB.buscarPorId(id);
             if (produto is null)
-            return NotFound();
+                return NotFound();
+
             return View(produto);
+
         }
 
-        [HttpPost, ActionName("Exclusao")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Exclusao(Produto produto, int id)
+        public IActionResult DeleteConfirmed(int id)
         {
-
             bool excluiu = _produtosDB.Excluir(id);
             if(!excluiu)
-             return NotFound();
+            return NotFound();
 
             TempData["Sucesso"] =
-            "Produto excluído com sucesso!";
-            return RedirectToAction(nameof(Index));    
-            }
+            "Produto deletado com sucesso!";
+            return RedirectToAction(nameof(Index));
         }
+
 
     }
 }
